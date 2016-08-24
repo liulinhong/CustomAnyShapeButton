@@ -13,8 +13,8 @@
 		390FF0B11CE4CB7B00AFAD10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0AF1CE4CB7B00AFAD10 /* Main.storyboard */; };
 		390FF0B31CE4CB7B00AFAD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0B21CE4CB7B00AFAD10 /* Assets.xcassets */; };
 		390FF0B61CE4CB7B00AFAD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0B41CE4CB7B00AFAD10 /* LaunchScreen.storyboard */; };
-		390FF0C11CE4CBDA00AFAD10 /* ShapeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 390FF0BE1CE4CBDA00AFAD10 /* ShapeButton.m */; };
-		390FF0C21CE4CBDA00AFAD10 /* UIView+Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 390FF0C01CE4CBDA00AFAD10 /* UIView+Shape.m */; };
+		39C7F39E1D6D5CDB002352AC /* ShapeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7F39B1D6D5CDB002352AC /* ShapeButton.m */; };
+		39C7F39F1D6D5CDB002352AC /* UIView+Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7F39D1D6D5CDB002352AC /* UIView+Shape.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		390FF0B21CE4CB7B00AFAD10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390FF0B51CE4CB7B00AFAD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		390FF0B71CE4CB7B00AFAD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		390FF0BD1CE4CBDA00AFAD10 /* ShapeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeButton.h; sourceTree = "<group>"; };
-		390FF0BE1CE4CBDA00AFAD10 /* ShapeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeButton.m; sourceTree = "<group>"; };
-		390FF0BF1CE4CBDA00AFAD10 /* UIView+Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shape.h"; sourceTree = "<group>"; };
-		390FF0C01CE4CBDA00AFAD10 /* UIView+Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shape.m"; sourceTree = "<group>"; };
+		39C7F39A1D6D5CDB002352AC /* ShapeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeButton.h; sourceTree = "<group>"; };
+		39C7F39B1D6D5CDB002352AC /* ShapeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeButton.m; sourceTree = "<group>"; };
+		39C7F39C1D6D5CDB002352AC /* UIView+Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shape.h"; sourceTree = "<group>"; };
+		39C7F39D1D6D5CDB002352AC /* UIView+Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shape.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +48,7 @@
 		390FF09A1CE4CB7A00AFAD10 = {
 			isa = PBXGroup;
 			children = (
+				39C7F3991D6D5CA9002352AC /* CustomAnyShapeButton */,
 				390FF0A51CE4CB7B00AFAD10 /* CustomAnyShapeButton */,
 				390FF0A41CE4CB7A00AFAD10 /* Products */,
 			);
@@ -64,10 +65,6 @@
 		390FF0A51CE4CB7B00AFAD10 /* CustomAnyShapeButton */ = {
 			isa = PBXGroup;
 			children = (
-				390FF0BD1CE4CBDA00AFAD10 /* ShapeButton.h */,
-				390FF0BE1CE4CBDA00AFAD10 /* ShapeButton.m */,
-				390FF0BF1CE4CBDA00AFAD10 /* UIView+Shape.h */,
-				390FF0C01CE4CBDA00AFAD10 /* UIView+Shape.m */,
 				390FF0A91CE4CB7B00AFAD10 /* AppDelegate.h */,
 				390FF0AA1CE4CB7B00AFAD10 /* AppDelegate.m */,
 				390FF0AC1CE4CB7B00AFAD10 /* ViewController.h */,
@@ -87,6 +84,18 @@
 				390FF0A71CE4CB7B00AFAD10 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39C7F3991D6D5CA9002352AC /* CustomAnyShapeButton */ = {
+			isa = PBXGroup;
+			children = (
+				39C7F39A1D6D5CDB002352AC /* ShapeButton.h */,
+				39C7F39B1D6D5CDB002352AC /* ShapeButton.m */,
+				39C7F39C1D6D5CDB002352AC /* UIView+Shape.h */,
+				39C7F39D1D6D5CDB002352AC /* UIView+Shape.m */,
+			);
+			name = CustomAnyShapeButton;
+			path = CustomAnyShapeButton/CustomAnyShapeButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,9 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				390FF0AE1CE4CB7B00AFAD10 /* ViewController.m in Sources */,
-				390FF0C11CE4CBDA00AFAD10 /* ShapeButton.m in Sources */,
+				39C7F39E1D6D5CDB002352AC /* ShapeButton.m in Sources */,
 				390FF0AB1CE4CB7B00AFAD10 /* AppDelegate.m in Sources */,
-				390FF0C21CE4CBDA00AFAD10 /* UIView+Shape.m in Sources */,
+				39C7F39F1D6D5CDB002352AC /* UIView+Shape.m in Sources */,
 				390FF0A81CE4CB7B00AFAD10 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +321,7 @@
 				390FF0BC1CE4CB7B00AFAD10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
