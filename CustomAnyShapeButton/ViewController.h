@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShapeButton.h"
 
 @interface ViewController : UIViewController
 
