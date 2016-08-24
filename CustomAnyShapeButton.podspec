@@ -1,11 +1,3 @@
-#
-#  Be sure to run `pod spec lint CustomAnyShapeButton.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
 Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -17,17 +9,16 @@ Pod::Spec.new do |s|
 
   s.name         = "CustomAnyShapeButton"
   s.version      = "1.0.0"
-  s.summary      = "A short description of CustomAnyShapeButton."
+  s.summary      = "CustomAnyShapeButton."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = " It is a custom button used on iOS, which implement by Objective-C."  
 
-  s.homepage     = "http://EXAMPLE/CustomAnyShapeButton"
+  s.homepage     = "https://github.com/liulinhong/CustomAnyShapeButton"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -64,7 +55,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +70,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/CustomAnyShapeButton.git", :tag => "#{s.version}" }
+  s.source = { :git => "https://github.com/liulinhong/CustomAnyShapeButton.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,9 +81,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
-
+  s.source_files  = 'CustomAnyShapeButton/CustomAnyShapeButton/'
+  s.exclude_files = "CustomAnyShapeButton/CustomAnyShapeButton/shapeButton.h"
+  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -129,7 +120,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
