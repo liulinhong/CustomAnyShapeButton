@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = 'CustomAnyShapeButton/CustomAnyShapeButton/'
-  s.exclude_files = "CustomAnyShapeButton/CustomAnyShapeButton/shapeButton.h"
+  # s.exclude_files = "CustomAnyShapeButton/CustomAnyShapeButton/shapeButton.h"
   s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
   # s.public_header_files = "Classes/**/*.h"
 
