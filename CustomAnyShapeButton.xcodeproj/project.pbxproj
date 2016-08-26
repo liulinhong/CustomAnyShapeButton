@@ -13,6 +13,7 @@
 		390FF0B11CE4CB7B00AFAD10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0AF1CE4CB7B00AFAD10 /* Main.storyboard */; };
 		390FF0B31CE4CB7B00AFAD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0B21CE4CB7B00AFAD10 /* Assets.xcassets */; };
 		390FF0B61CE4CB7B00AFAD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0B41CE4CB7B00AFAD10 /* LaunchScreen.storyboard */; };
+		3957445E1D702610007FE024 /* CB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3957445D1D702610007FE024 /* CB.framework */; };
 		39BCF0AE1D6E843800F5AC02 /* list in Resources */ = {isa = PBXBuildFile; fileRef = 39BCF0AC1D6E843800F5AC02 /* list */; };
 		39BCF0AF1D6E843800F5AC02 /* CustomAnyShapeButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39BCF0AD1D6E843800F5AC02 /* CustomAnyShapeButton.podspec */; };
 		39C7F39E1D6D5CDB002352AC /* ShapeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7F39B1D6D5CDB002352AC /* ShapeButton.m */; };
@@ -31,6 +32,7 @@
 		390FF0B21CE4CB7B00AFAD10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390FF0B51CE4CB7B00AFAD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		390FF0B71CE4CB7B00AFAD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3957445D1D702610007FE024 /* CB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CB.framework; sourceTree = "<group>"; };
 		39BCF0AC1D6E843800F5AC02 /* list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = list; sourceTree = "<group>"; };
 		39BCF0AD1D6E843800F5AC02 /* CustomAnyShapeButton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CustomAnyShapeButton.podspec; sourceTree = "<group>"; };
 		39C7F39A1D6D5CDB002352AC /* ShapeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeButton.h; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3957445E1D702610007FE024 /* CB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,7 +60,6 @@
 				39BCF0AC1D6E843800F5AC02 /* list */,
 				39BCF0AD1D6E843800F5AC02 /* CustomAnyShapeButton.podspec */,
 				39C7F3A01D6D63ED002352AC /* LICENCE */,
-				39C7F3991D6D5CA9002352AC /* CustomAnyShapeButton */,
 				390FF0A51CE4CB7B00AFAD10 /* CustomAnyShapeButton */,
 				390FF0A41CE4CB7A00AFAD10 /* Products */,
 			);
@@ -74,6 +76,8 @@
 		390FF0A51CE4CB7B00AFAD10 /* CustomAnyShapeButton */ = {
 			isa = PBXGroup;
 			children = (
+				3957445C1D702610007FE024 /* Framework */,
+				39C7F3991D6D5CA9002352AC /* CustomAnyShapeButton */,
 				390FF0A91CE4CB7B00AFAD10 /* AppDelegate.h */,
 				390FF0AA1CE4CB7B00AFAD10 /* AppDelegate.m */,
 				390FF0AC1CE4CB7B00AFAD10 /* ViewController.h */,
@@ -95,6 +99,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3957445C1D702610007FE024 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				3957445D1D702610007FE024 /* CB.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		39C7F3991D6D5CA9002352AC /* CustomAnyShapeButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +115,7 @@
 				39C7F39C1D6D5CDB002352AC /* UIView+Shape.h */,
 				39C7F39D1D6D5CDB002352AC /* UIView+Shape.m */,
 			);
-			name = CustomAnyShapeButton;
-			path = CustomAnyShapeButton/CustomAnyShapeButton;
+			path = CustomAnyShapeButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +307,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomAnyShapeButton/Framework",
+				);
 				INFOPLIST_FILE = CustomAnyShapeButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.llh.CustomAnyShapeButton;
@@ -307,6 +322,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CustomAnyShapeButton/Framework",
+				);
 				INFOPLIST_FILE = CustomAnyShapeButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.llh.CustomAnyShapeButton;
