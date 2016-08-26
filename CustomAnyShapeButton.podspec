@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "CustomAnyShapeButton"
-s.version      = "1.2.0"
+s.version      = "1.3.0"
 s.summary      = "CustomAnyShapeButton."
 
 # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ s.source = { :git => "https://github.com/liulinhong/CustomAnyShapeButton.git", :
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "CustomAnyShapeButton/CustomAnyShapeButton", "CustomAnyShapeButton/CustomAnyShapeButton/Test"
+s.source_files  = "CustomAnyShapeButton/CustomAnyShapeButton", "CustomAnyShapeButton/Framework"
 # s.exclude_files = "CustomAnyShapeButton/CustomAnyShapeButton/shapeButton.h"
 # s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
 # s.public_header_files = "Classes/**/*.h"
