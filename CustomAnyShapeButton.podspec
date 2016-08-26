@@ -81,9 +81,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'CustomAnyShapeButton/CustomAnyShapeButton/'
+  s.source_files  = "CustomAnyShapeButton/CustomAnyShapeButton"
   # s.exclude_files = "CustomAnyShapeButton/CustomAnyShapeButton/shapeButton.h"
-  s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
+  # s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
   # s.public_header_files = "Classes/**/*.h"
 
 
