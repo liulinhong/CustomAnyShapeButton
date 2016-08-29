@@ -55,7 +55,19 @@ s.author             = { "linhong.liu" => "liulinhong@feinno.com" }
 #
 
 # s.platform     = :ios
-s.platform     = :ios, "9.0"
+s.platform       = :ios, "9.0"
+
+s.ios.platform            = :ios, '9.0'
+
+s.ios.preserve_paths      = 'CustomAnyShapeButton/Framework/CB.framework'
+
+s.ios.public_header_files  = 'CustomAnyShapeButton/Framework/CB.framework/Headers/*.h'
+
+s.ios.vendored_frameworks  = 'CustomAnyShapeButton/Framework/CB.framework'
+
+文／jeeliu（简书作者）
+原文链接：http://www.jianshu.com/p/a1460a597d46
+著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
 
 #  When using multiple platforms
 # s.ios.deployment_target = "5.0"
@@ -81,7 +93,7 @@ s.source = { :git => "https://github.com/liulinhong/CustomAnyShapeButton.git", :
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "CustomAnyShapeButton/CustomAnyShapeButton", "CustomAnyShapeButton/Framework"
+s.source_files  = "CustomAnyShapeButton/CustomAnyShapeButton", "CustomAnyShapeButton/CB.framework"
 # s.exclude_files = "CustomAnyShapeButton/CustomAnyShapeButton/shapeButton.h"
 # s.frameworks = 'Foundation', 'CoreGraphics', 'UIKit'
 # s.public_header_files = "Classes/**/*.h"
