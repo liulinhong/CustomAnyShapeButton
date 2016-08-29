@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "CustomAnyShapeButton"
-s.version      = "1.6.0"
+s.version      = "1.7.0"
 s.summary      = "CustomAnyShapeButton."
 
 # This description is used to generate tags and improve search results.
@@ -58,11 +58,8 @@ s.author             = { "linhong.liu" => "liulinhong@feinno.com" }
 s.platform       = :ios, "9.0"
 
 s.ios.platform            = :ios, '9.0'
-
 s.ios.preserve_paths      = 'CustomAnyShapeButton/Framework/CB.framework'
-
 s.ios.public_header_files  = 'CustomAnyShapeButton/Framework/CB.framework/Headers/*.h'
-
 s.ios.vendored_frameworks  = 'CustomAnyShapeButton/Framework/CB.framework'
 
 #原文链接：http://www.jianshu.com/p/a1460a597d46
