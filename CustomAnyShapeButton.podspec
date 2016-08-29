@@ -65,9 +65,7 @@ s.ios.public_header_files  = 'CustomAnyShapeButton/Framework/CB.framework/Heade
 
 s.ios.vendored_frameworks  = 'CustomAnyShapeButton/Framework/CB.framework'
 
-文／jeeliu（简书作者）
-原文链接：http://www.jianshu.com/p/a1460a597d46
-著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
+#原文链接：http://www.jianshu.com/p/a1460a597d46
 
 #  When using multiple platforms
 # s.ios.deployment_target = "5.0"
