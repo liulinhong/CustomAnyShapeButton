@@ -13,13 +13,13 @@
 		390FF0B11CE4CB7B00AFAD10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0AF1CE4CB7B00AFAD10 /* Main.storyboard */; };
 		390FF0B31CE4CB7B00AFAD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0B21CE4CB7B00AFAD10 /* Assets.xcassets */; };
 		390FF0B61CE4CB7B00AFAD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390FF0B41CE4CB7B00AFAD10 /* LaunchScreen.storyboard */; };
-		3957445E1D702610007FE024 /* CB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3957445D1D702610007FE024 /* CB.framework */; };
 		395744621D70341A007FE024 /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 395744611D70341A007FE024 /* TestObj.m */; };
 		39BCF0AE1D6E843800F5AC02 /* list in Resources */ = {isa = PBXBuildFile; fileRef = 39BCF0AC1D6E843800F5AC02 /* list */; };
 		39BCF0AF1D6E843800F5AC02 /* CustomAnyShapeButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39BCF0AD1D6E843800F5AC02 /* CustomAnyShapeButton.podspec */; };
 		39C7F39E1D6D5CDB002352AC /* ShapeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7F39B1D6D5CDB002352AC /* ShapeButton.m */; };
 		39C7F39F1D6D5CDB002352AC /* UIView+Shape.m in Sources */ = {isa = PBXBuildFile; fileRef = 39C7F39D1D6D5CDB002352AC /* UIView+Shape.m */; };
 		39C7F3A11D6D63ED002352AC /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = 39C7F3A01D6D63ED002352AC /* LICENCE */; };
+		39FCAD101D7406F100AE135B /* CustomAnyShapeButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FCAD0E1D7406F100AE135B /* CustomAnyShapeButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,6 @@
 		390FF0B21CE4CB7B00AFAD10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		390FF0B51CE4CB7B00AFAD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		390FF0B71CE4CB7B00AFAD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3957445D1D702610007FE024 /* CB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CB.framework; sourceTree = "<group>"; };
 		395744601D70341A007FE024 /* TestObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObj.h; sourceTree = "<group>"; };
 		395744611D70341A007FE024 /* TestObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObj.m; sourceTree = "<group>"; };
 		39BCF0AC1D6E843800F5AC02 /* list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = list; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		39C7F39C1D6D5CDB002352AC /* UIView+Shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shape.h"; sourceTree = "<group>"; };
 		39C7F39D1D6D5CDB002352AC /* UIView+Shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shape.m"; sourceTree = "<group>"; };
 		39C7F3A01D6D63ED002352AC /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		39FCAD0E1D7406F100AE135B /* CustomAnyShapeButton.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CustomAnyShapeButton.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3957445E1D702610007FE024 /* CB.framework in Frameworks */,
+				39FCAD101D7406F100AE135B /* CustomAnyShapeButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +79,7 @@
 		390FF0A51CE4CB7B00AFAD10 /* CustomAnyShapeButton */ = {
 			isa = PBXGroup;
 			children = (
-				3957445C1D702610007FE024 /* Framework */,
+				39FCAD0C1D7406F100AE135B /* Frameworks */,
 				39C7F3991D6D5CA9002352AC /* CustomAnyShapeButton */,
 				390FF0A91CE4CB7B00AFAD10 /* AppDelegate.h */,
 				390FF0AA1CE4CB7B00AFAD10 /* AppDelegate.m */,
@@ -102,14 +102,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3957445C1D702610007FE024 /* Framework */ = {
-			isa = PBXGroup;
-			children = (
-				3957445D1D702610007FE024 /* CB.framework */,
-			);
-			path = Framework;
-			sourceTree = "<group>";
-		};
 		3957445F1D7033FF007FE024 /* Test */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +121,14 @@
 				39C7F39D1D6D5CDB002352AC /* UIView+Shape.m */,
 			);
 			path = CustomAnyShapeButton;
+			sourceTree = "<group>";
+		};
+		39FCAD0C1D7406F100AE135B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39FCAD0E1D7406F100AE135B /* CustomAnyShapeButton.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +324,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomAnyShapeButton/Framework",
+					"$(PROJECT_DIR)/CustomAnyShapeButton/Frameworks",
 				);
 				INFOPLIST_FILE = CustomAnyShapeButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -339,6 +340,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CustomAnyShapeButton/Framework",
+					"$(PROJECT_DIR)/CustomAnyShapeButton/Frameworks",
 				);
 				INFOPLIST_FILE = CustomAnyShapeButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
