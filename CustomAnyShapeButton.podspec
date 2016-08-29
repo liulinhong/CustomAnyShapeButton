@@ -57,10 +57,10 @@ s.author             = { "linhong.liu" => "liulinhong@feinno.com" }
 # s.platform     = :ios
 s.platform       = :ios, "9.0"
 
-s.ios.platform             = :ios, "9.0"
-s.ios.preserve_paths       = "CustomAnyShapeButton/Framework/CB.framework"
-s.ios.public_header_files  = "CustomAnyShapeButton/Framework/CB.framework/Headers/*.h"
-s.ios.vendored_frameworks  = "CustomAnyShapeButton/Framework/CB.framework"
+#s.ios.platform             = :ios, "9.0"
+#s.ios.preserve_paths       = "CustomAnyShapeButton/Framework/CB.framework"
+#s.ios.public_header_files  = "CustomAnyShapeButton/Framework/CB.framework/Headers/*.h"
+#s.ios.vendored_frameworks  = "CustomAnyShapeButton/Framework/CB.framework"
 
 #原文链接：http://www.jianshu.com/p/a1460a597d46
 
@@ -120,6 +120,8 @@ s.source_files  = "CustomAnyShapeButton/CustomAnyShapeButton", "CustomAnyShapeBu
 # s.library   = "iconv"
 # s.libraries = "iconv", "xml2"
 
+#s.preserve_paths = 'CustomAnyShapeButton.framework'
+s.vendored_frameworks = 'Frameworks/CustomAnyShapeButton.framework'
 
 # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
